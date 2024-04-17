@@ -68,7 +68,7 @@
         <div class="text">Operation Nightfall</div>
     </div>
     <div class="video-container">
-        <video autoplay muted loop>
+        <video autoplay muted loop id="bgVideo">
             <source src="video04.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -84,5 +84,11 @@ I am the tool that brings long sleep.
 
 What am I?</div>
     </div>
+	<script>
+        setTimeout(function(){
+            var video = document.getElementById("bgVideo");
+            video.muted = false;
+        }, 2000); // Unmute after 2 seconds
+    </script>
 </body>
 </html>
